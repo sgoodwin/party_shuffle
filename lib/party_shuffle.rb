@@ -1,16 +1,26 @@
-class Array
-  def party_shuffle
-    if self.count == 0
-      return self 
+class PartyShuffle
+  def party_shuffle(array)
+    if array.count == 0
+      return array
     end
 
-    shuffled = [self[0]]
-    for i in 1..(self.count-1) do
+    forshuffle = array.reverse
+    
+    shuffled = []
+
+    i = 0
+    loop do
+      break if forshuffle.count == 0
+
       if i % 2 == 0
-        shuffled += [self[i]]
+        item = forshuffle.pop
       else
-        shuffled += [self.sample]
+        item = forshuffle.sample
+        forshuffle.delete(item)
       end
+
+      shuffled.push(item)
+      i += 1
     end
 
     return shuffled
