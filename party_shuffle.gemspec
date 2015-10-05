@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'party_shuffle'
-  s.version     = '1.0.2'
-  s.date        = '2015-05-15'
+  s.version     = '1.0.3'
+  s.date        = '2015-10-05'
   s.summary     = "Because just random shuffle isn't enough sometimes!"
   s.description = "Shuffles an array in a fun way"
   s.authors     = ["Samuel Goodwin", "Joris Zaalberg"]
