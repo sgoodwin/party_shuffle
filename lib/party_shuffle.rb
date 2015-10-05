@@ -12,7 +12,7 @@ class PartyShuffle
     loop do
       break if forshuffle.count == 0
 
-      if i % 2 == 0
+      if i % 2 == 1
         item = forshuffle.pop
       else
         item = forshuffle.sample
